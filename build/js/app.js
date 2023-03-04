@@ -6,7 +6,8 @@ const handelToggel = () => {
 }
 
 const handelCloseToggel = () => {
- menuOpen.classList.toggle('hidden');
+    menuOpen.classList.toggle('hidden');
+    // menuOpen.classList.toggle('flex');
 };
 
 menuHam.addEventListener('click', handelToggel);
