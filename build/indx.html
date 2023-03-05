@@ -21,37 +21,33 @@
           <a href="#up">📱mobile</a>
         </h1>
         <div>
-          <button id="ham-menu" class="text-3xl outline-none sm:hidden relative w-8 h-8">
-           <div class="bg-zinc-800 w-8 h-1  
-           rounded absolute top-4 -mt-0.5 transition-all duration-500 
-           before:content-[''] before:bg-zinc-800 before:w-8 before:h-1 
-           befor:rounded before:absolute before:-translate-x-4 before:-translate-y-3 
-           before:transition-all before:duration-500 before:rounded
-           after:content-[''] after:bg-zinc-800 after:w-8 after:h-1 
-           after:rounded after:absolute after:-translate-x-4 after:translate-y-3 
-           after:transition-all after:duration-500">
+          <button id="ham-menu" class=" outline-none hamburger sm:hidden relative w-8 h-8 transition-all duration-500 mt-2">
+           <span class="hamurger-top"></span>
+           <span class="hamurger-mid"></span> 
+           <span class="hamurger-bot"></span>
           </div>
           </button>
           <nav class="hidden sm:block space-x-8 capitalize">
             <a class="hover:text-red-500 duration-300" href="#appel">appel</a>
-            <a class="hover:text-red-500 duration-300" href="#samsung"
-              >samsung</a
-            >
+            <a class="hover:text-red-500 duration-300" href="#samsung">samsung</a>
             <a class="hover:text-red-500 duration-300" href="#google">google</a>
-            <a class="hover:text-red-500 duration-300" href="#contact"
-              >contact</a
-            >
+            <a class="hover:text-red-500 duration-300" href="#contact">contact</a>
           </nav>
         </div>
       </section>
-      <section id="menu"class="hidden  absolute flex top-0  justify-center items-center w-full p-6 min-h-screen bg-yellow-300 text-blue-700 font-serif capitalize text-4xl gap-0 animate-menu sm:hidden">
-        <div class="flex flex-col gap-8 items-center justify-center mt-[-25rem]">
+      <section id="menuBar" class="hidden  absolute top-0  flex-col-reverse justify-end items-center w-full p-6 min-h-screen bg-yellow-300 text-blue-700 font-serif capitalize text-4xl gap-0 animate-menu sm:hidden">
+        <div class="flex flex-col gap-8 items-center justify-center ">
           <a href="#appel">appel</a>
           <a href="#samsung">samsung</a>
           <a href="#google">google</a>
           <a href="#contact">contact us</a>
         </div>
-        <i class="fa-solid fa-xmark cursor-pointer absolute right-4 top-4"></i>
+          <button id="menu" class="outline-none  closed  sm:hidden w-8 h-8 transition-all duration-500 ">
+            <span class="close-top"></span>
+            <span class="close-mid"></span> 
+            <span class="close-bot"></span>
+
+          </button>
       </section>
     </header>
     <main class="max-w-4xl mx-auto bg-blue-700">

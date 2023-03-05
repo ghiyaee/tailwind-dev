@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hamurger-top,.hamurger-mid,.hamurger-bot{
+position:absolute;
+width:32px;
+height:2px;
+top:0;
+left:0;
+background:#000;
+transition-all:0.5s
+}
+
+.hamurger-mid{
+transform:translateY(7px);
+
+}
+.hamurger-bot{
+transform:translateY(14px);
+}
+.open{
+transform:rotate(90deg)
+}
+.open .hamurger-top{
+transform:rotate(45deg) translateY(6px) translateX(6px)
+}
+.open .hamurger-mid{
+display:none
+}
+.open .hamurger-bot{
+transform:rotate(-45deg) translateY(6px) translateX(-6px)
+}
+
+
+.close-top,.close-mid,.close-bot{
+position:absolute;
+width:32px;
+height:2px;
+top:0.5rem;
+right:-12.2rem;
+background:#000;
+transition-all:0.5s;
+font-family:bold;
+}
+
+.close-mid{
+transform:translateY(7px);
+
+}
+.close-bot{
+transform:translateY(14px);
+}
+
+.closed{
+transform:rotate(0deg)
+}
+.closed .close-top{
+transform:rotate(45deg) translateY(6px) translateX(6px)
+}
+.closed .close-mid{
+display:none
+}
+.closed .close-bot{
+transform:rotate(-45deg) translateY(6px) translateX(-6px)
+}
